@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EverRoot Collective | Sustainable Fashion Essentials</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home">EverRoot Collective</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#contact">Contact</a>
+        <button class="nav-action cart-toggle" type="button">Cart (<span id="cart-count">0</span>)</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Premium sustainable style designed for conscious living.</h1>
+        <p>Discover eco-friendly wardrobe essentials made from responsibly sourced materials, crafted for comfort, longevity, and a lower environmental footprint.</p>
+        <button type="button" onclick="location.href='#shop'">Browse Collection</button>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="value-heading">
+      <div class="feature-card">
+        <h3>Ethically sourced materials</h3>
+        <p>From organic cotton to recycled leather, every piece is made with transparent, traceable supply chains.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Carbon-conscious delivery</h3>
+        <p>Shipping is optimized for sustainability with eco-friendly packaging and carbon-neutral option available.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Designed to last</h3>
+        <p>Timeless silhouettes and durable craftsmanship keep your wardrobe beautiful season after season.</p>
+      </div>
+    </section>
+
+    <section class="product-grid-section" id="shop">
+      <h2>Featured collections</h2>
+      <div class="product-grid">
+  <!-- 1. Organic Cotton Tee -->
+  <article class="product-card">
+    <img src="images/organic-cotton-tee.png" alt="Organic cotton shirt in neutral tone" />
+    <div class="product-card-content">
+      <h4>Organic Cotton Tee</h4>
+      <p>Soft, breathable essentials made from GOTS-certified organic fibers.</p>
+      <p class="price">$68</p>
+      <div class="product-quantity">
+        <label for="qty-prod-shirt">Qty:</label>
+        <input type="number" id="qty-prod-shirt" class="quantity-input" value="1" min="1" max="99" />
+      </div>
+      <button class="add-to-cart" data-product-id="prod-shirt" type="button">Add to cart</button>
+    </div>
+  </article>
+
+  <!-- 2. Recycled Leather Sneakers -->
+  <article class="product-card">
+    <img src="images/recycled-leather-sneakers.png" alt="Sustainable sneakers made from recycled materials" />
+    <div class="product-card-content">
+      <h4>Recycled Leather Sneakers</h4>
+      <p>Minimal design with an eco-conscious sole and premium finish.</p>
+      <p class="price">$128</p>
+      <div class="product-quantity">
+        <label for="qty-prod-shoes">Qty:</label>
+        <input type="number" id="qty-prod-shoes" class="quantity-input" value="1" min="1" max="99" />
+      </div>
+      <button class="add-to-cart" data-product-id="prod-shoes" type="button">Add to cart</button>
+    </div>
+  </article>
+
+  <!-- 3. Recycled Canvas Tote -->
+  <article class="product-card">
+    <img src="images/recycled-canvas-tote.png" alt="Earth-tone tote bag made from recycled fibers" />
+    <div class="product-card-content">
+      <h4>Recycled Canvas Tote</h4>
+      <p>Carry more with a roomy, durable bag crafted from post-consumer waste.</p>
+      <p class="price">$92</p>
+      <div class="product-quantity">
+        <label for="qty-prod-bag">Qty:</label>
+        <input type="number" id="qty-prod-bag" class="quantity-input" value="1" min="1" max="99" />
+      </div>
+      <button class="add-to-cart" data-product-id="prod-bag" type="button">Add to cart</button>
+    </div>
+  </article>
+
+  <!-- 4. Eco-Edge Watch -->
+  <article class="product-card">
+    <img src="images/eco-edge-watch.png" alt="Eco-friendly watch with minimalist design" />
+    <div class="product-card-content">
+      <h4>Eco-Edge Watch</h4>
+      <p>Refined timepiece built with sustainable materials and timeless appeal.</p>
+      <p class="price">$198</p>
+      <div class="product-quantity">
+        <label for="qty-prod-watch">Qty:</label>
+        <input type="number" id="qty-prod-watch" class="quantity-input" value="1" min="1" max="99" />
+      </div>
+      <button class="add-to-cart" data-product-id="prod-watch" type="button">Add to cart</button>
+    </div>
+  </article>
+</div>
+    </section>
+
+    <section class="testimonial" aria-labelledby="testimonial-heading">
+      <h2 id="testimonial-heading">Customer story</h2>
+      <p>"EverRoot Collective made it easy to refresh my wardrobe without compromising on style or sustainability. The quality feels premium and every detail reflects mindful design."</p>
+      <cite>— Maya R., Conscious shopper</cite>
+    </section>
+
+    <section class="testimonial" id="mission">
+      <h2>About our sustainability mission</h2>
+      <p>We commit to sourcing responsibly, minimizing waste, and creating wardrobe essentials that support a circular fashion future. Every collection is designed with people and planet in mind.</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact & feedback</h2>
+      <p>Have questions about fit, materials, or shipping? Share your feedback and we'll guide you toward choices that feel good and do good.</p>
+      
+      <form class="contact-form" id="feedback-form">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="category">Feedback type</label>
+          <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="product-question">Product question</option>
+            <option value="shipping">Shipping inquiry</option>
+            <option value="material-info">Material information</option>
+            <option value="general-feedback">General feedback</option>
+            <option value="collaboration">Collaboration opportunity</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send feedback</button>
+        <div id="form-message" class="form-message"></div>
+      </form>
+    </section>
+  </main>
+
+  <aside class="cart-drawer hidden" aria-label="Shopping cart">
+    <div class="cart-header">
+      <div>
+        <h2>Your cart</h2>
+        <p class="cart-status">Review and checkout your sustainable picks.</p>
+      </div>
+      <button type="button" class="cart-close" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-body">
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty">Your cart is empty.</div>
+    </div>
+    <div class="cart-footer">
+      <p class="cart-subtotal">Subtotal: <strong id="cart-total">$0.00</strong></p>
+      <button class="checkout-button" type="button" id="checkout-button">Checkout securely</button>
+    </div>
+  </aside>
+  <div class="cart-overlay hidden" id="cart-overlay"></div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-nav">
+        <strong>EverRoot Collective</strong>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#mission">Sustainability</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-nav">
+        <small>Shipping is eco-conscious and thoughtfully packaged to reduce waste. Returns are simple and sustainable, with clear guidance to support responsible choices.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
